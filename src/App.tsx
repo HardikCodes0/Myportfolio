@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, Github, Linkedin, ExternalLink, Code, Database, Globe, Menu, X, Smartphone, Calendar } from 'lucide-react';
-
+import profileImage from './assets/136354786.jpg';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -82,7 +82,7 @@ function App() {
           <div className="mb-8">
             <div className="w-40 h-40 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl ring-4 ring-white/50 hover:scale-105 transition-transform duration-300">
               <img 
-                src="/src/assets/136354786.jpg" 
+                src={profileImage}
                 alt="Hardik Batra" 
                 className="w-full h-full object-cover"
               />
